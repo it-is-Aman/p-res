@@ -1,0 +1,10 @@
+.body{
+    font-size: 2.5vw;
+    }
+   
+  
+  .lineMask p{
+      margin: 80px;
+      font-weight: 700;
+      overflow: hidden;
+    }
