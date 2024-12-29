@@ -1,12 +1,20 @@
 import React, { useRef } from 'react'
 import { useInView, motion } from 'framer-motion';
 import './About.css'
-// import { useInView } from 'react-intersection-observer';
 
 const About = () => {
+
+    const [mounted, setMounted] = useState(false);
+
+     // Ensure the component is rendered on the client-side
+    useEffect(
+        () => setMounted(true)
+        , []);
+
     const phrases = [
         "I'm a passionate developer with a knack for building responsive and performance-driven web applications. With experience in modern frontend technologies, I strive to deliver innovative solutions that meet user needs and exceed expectations",
     ]
+
     const body = useRef(null);
     const isInView = useInView(body, { once: true, margin: "-75%" })
 
@@ -14,9 +22,11 @@ const About = () => {
         initial: { y: "100%" },
         enter: i => ({ y: "0", transition: { duration: 0.75, ease: [0.33, 1, 0.68, 1], delay: 0.075 * i } })
     }
+
+    if (!mounted) return null;
     return (
         <div
-        ref={body}
+            ref={body}
             className='body mt-52 mb-52 font-source-sans-pro '>
             {
                 phrases.map((phrase, index) => {
