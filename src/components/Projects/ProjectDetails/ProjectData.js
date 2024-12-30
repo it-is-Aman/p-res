@@ -28,6 +28,64 @@ const projects = [
   },
   {
     id: 2,
+    title: "TabTrack - Tab Session Manager",
+    inspiration: "TabTrack was inspired by the need for efficient browser tab management, especially for users who work with multiple tab sessions and want to organize their browsing workflow effectively.",
+    techStack: [
+      "JavaScript",
+      "Chrome Extension API",
+      "HTML",
+      "CSS",
+      "Chrome Storage API",
+      "Chrome Tabs API"
+    ],
+    useCase: "TabTrack allows users to save, restore, and manage groups of browser tabs as sessions. It's particularly useful for users who work on multiple projects, research topics, or need to maintain different browsing contexts that can be easily restored later.",
+    description: "A Chrome extension that helps users manage browser tabs by allowing them to save, organize, and restore tab sessions with ease.",
+    features: [
+      "Save current window tabs as named sessions",
+      "Restore saved tab sessions in new windows",
+      "Delete unwanted sessions",
+      "Export sessions as JSON files",
+      "Import sessions from JSON files",
+      "Persistent storage using Chrome Storage API",
+      "Clean and intuitive user interface",
+      "Real-time session management",
+      "Multiple sessions support",
+      "Automatic session initialization on installation"
+    ],
+    imageUrl: '/img/TabTrack.png',
+    liveUrl: import.meta.env.VITE_TABTRACK,
+    githubUrl: import.meta.env.VITE_TABTRACK_GITHUB,
+  }, {
+    id: 3,
+    title: "Fit Track",
+    inspiration: "Fit Track was developed to provide users with a comprehensive fitness tracking solution that combines workout management, nutrition tracking, and personalized guidance.",
+    techStack: [
+      "React",
+      "Firebase",
+      "Chart.js",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Context API"
+    ],
+    useCase: "Fit Track helps users maintain their fitness journey by tracking workouts, monitoring calorie intake, and providing personalized workout recommendations based on their goals.",
+    description: "A comprehensive fitness tracking application that combines workout management, nutrition monitoring, and personalized guidance.",
+    features: [
+      "Workout tracking and logging",
+      "Calorie tracking",
+      "Progress visualization",
+      "Custom workout plans",
+      "Exercise guide library",
+      "Goal setting and monitoring",
+      "Progress charts and analytics",
+      "Firebase authentication",
+      "Real-time data synchronization"
+    ],
+    imageUrl: '/img/FitTrack.png',
+    liveUrl: import.meta.env.VITE_FITTRACK,
+    githubUrl: import.meta.env.VITE_FITTRACK_GITHUB,
+  },
+  {
+    id: 4,
     title: "SafeZone",
     inspiration: "SafeZone was inspired by the growing need for personal safety solutions, particularly for women, providing real-time protection and emergency response capabilities in potentially dangerous situations.",
     techStack: [
@@ -58,7 +116,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 5,
     title: "ExpenseSync",
     inspiration: "ExpenseSync was developed to simplify personal and group expense tracking, making it easier for individuals and groups to manage their finances and split expenses efficiently.",
     techStack: [
@@ -87,37 +145,9 @@ const projects = [
     liveUrl: import.meta.env.VITE_EXPENSESYNC,
     githubUrl: import.meta.env.VITE_EXPENSESYNC_GITHUB,
   },
+
   {
-    id: 4,
-    title: "Fit Track",
-    inspiration: "Fit Track was developed to provide users with a comprehensive fitness tracking solution that combines workout management, nutrition tracking, and personalized guidance.",
-    techStack: [
-      "React",
-      "Firebase",
-      "Chart.js",
-      "Shadcn UI",
-      "Tailwind CSS",
-      "Context API"
-    ],
-    useCase: "Fit Track helps users maintain their fitness journey by tracking workouts, monitoring calorie intake, and providing personalized workout recommendations based on their goals.",
-    description: "A comprehensive fitness tracking application that combines workout management, nutrition monitoring, and personalized guidance.",
-    features: [
-      "Workout tracking and logging",
-      "Calorie tracking",
-      "Progress visualization",
-      "Custom workout plans",
-      "Exercise guide library",
-      "Goal setting and monitoring",
-      "Progress charts and analytics",
-      "Firebase authentication",
-      "Real-time data synchronization"
-    ],
-    imageUrl: '/img/FitTrack.png',
-    liveUrl: import.meta.env.VITE_FITTRACK,
-    githubUrl: import.meta.env.VITE_FITTRACK_GITHUB,
-  },
-  {
-    id: 5,
+    id: 6,
     title: "Crypto-Scope",
     inspiration: "Crypto-Scope was created to provide cryptocurrency enthusiasts with a comprehensive platform for tracking and analyzing digital assets in real-time.",
     techStack: [
@@ -144,6 +174,7 @@ const projects = [
     liveUrl: import.meta.env.VITE_CRYPTOSCOPE,
     githubUrl: import.meta.env.VITE_CRYPTOSCOPE_GITHUB,
   },
+
 
 ]
 export default projects;
